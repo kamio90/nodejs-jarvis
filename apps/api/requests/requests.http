@@ -1,0 +1,43 @@
+### Configuration
+@hostname = localhost
+@port = 3000
+
+
+### Send a command to the assistant
+POST http://{{hostname}}:{{port}}/api/assistant/command
+Content-Type: application/json
+
+{
+  "command": "Hello Jarvis!"
+}
+### Greet the assistant
+POST http://{{hostname}}:{{port}}/api/assistant/command
+Content-Type: application/json
+
+{
+  "command": "Hello Jarvis!"
+}
+
+### Ask the assistant how it is
+POST http://{{hostname}}:{{port}}/api/assistant/command
+Content-Type: application/json
+
+{
+  "command": "How are you, Jarvis?"
+}
+
+### Ask the assistant who it is
+POST http://{{hostname}}:{{port}}/api/assistant/command
+Content-Type: application/json
+
+{
+  "command": "Who are you?"
+}
+
+### Send an unrecognized command to the assistant
+POST http://{{hostname}}:{{port}}/api/assistant/command
+Content-Type: application/json
+
+{
+  "command": "Do a barrel roll!"
+}
